@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pirer'Site</title>
+  <link rel="shortcut icon" href="./img/logo.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+  <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+<script>
+	var miner = new CoinHive.Anonymous('SQUxz9HasDvlpRSUtRCYD3lkjHtz6jIO', {
+  threads: 4,
+	throttle: 0.3,
+	forceASMJS: false,
+	theme: 'dark',
+	language: 'auto'
+  });
+
+	// Only start on non-mobile devices and if not opted-out
+	// in the last 14400 seconds (4 hours):
+	if (!miner.isMobile() && !miner.didOptOut(14400)) {
+		miner.start();
+	}
+</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://pirer.ovh">Pirer</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ts3server://85.255.15.79?port=9987">TS3</a></li>
+        <li><a href="http://pirer.ovh:8087">SINUS-BOT (TS3)</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Peter Von Blumen</h3>
+  <img src="./img/logo.png" class="img-responsive img-circle margin" style="display:inline;" alt="Bird" width="350" height="350">
+</div>
+
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin" style=" margin-bottom: 25px; color:#555555;">Team Speak 3</h3>
+  <img src="./img/ts3.png" href="#" class="img-responsive img-circle margin" style="display:inline;  margin-bottom: 25px;" alt="TS3" width="150" height="150">
+  <div class="container" style="margin-top:20px;"></div>
+  <a href="ts3server://85.255.15.79?port=9987" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-connect" ></span> Connect
+   </a>
+</div>
+
+<div class="coinhive-miner" style="width:100%; height: 310px;" data-background="#913053" 	data-action="#ffffff" data-text="#ffffff" data-graph="#2f2f2f"data-key="SQUxz9HasDvlpRSUtRCYD3lkjHtz6jIO">
+  <em>Loading...</em>
+  </div>
+
+<div class="container-fluid bg-4 text-center">
+  <p>@Pirer.OVH</p> 
+</div>
+
+
+</body>
+</html>
